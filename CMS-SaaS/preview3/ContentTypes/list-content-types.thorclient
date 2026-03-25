@@ -54,12 +54,10 @@
   },
   "response": {
     "keys": [
-      "type",
-      "title",
-      "status",
-      "detail",
-      "instance",
-      "traceId"
+      "items",
+      "pageIndex",
+      "pageSize",
+      "totalItemCount"
     ]
   }
 }

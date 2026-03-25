@@ -1,0 +1,77 @@
+{
+  "request": {
+    "method": "PATCH",
+    "name": "https://YOUR_CMS_HOST/_cms/preview3/contenttypes/YOUR_TYPE_KEY",
+    "url": {
+      "raw": "{{API_URL}}/preview3/contenttypes/Test",
+      "query": []
+    },
+    "header": [
+      {
+        "id": "60c268d4-16c1-4913-9673-491e00dea358",
+        "key": "Authorization",
+        "value": "Bearer {{AccessToken}}",
+        "disabled": false,
+        "type": "text"
+      },
+      {
+        "id": "da0ba63d-d972-4ca1-a855-d8b662ed4b02",
+        "key": "Accept",
+        "value": "application/json",
+        "disabled": false,
+        "type": "text"
+      },
+      {
+        "id": "39289c7f-4f36-401d-9e5e-704ada236d01",
+        "key": "Content-Type",
+        "value": "application/merge-patch+json",
+        "disabled": false,
+        "type": "text"
+      }
+    ],
+    "body": {
+      "mode": "raw",
+      "raw": "{\"compositionBehaviors\":[]}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    }
+  },
+  "backup": {
+    "bodyType": "raw",
+    "bodySubType": "json",
+    "rawData": "{\n  \"compositionBehaviors\": []\n}"
+  },
+  "readme": "To open this file inside VSCode, you need to install Thor Client extension https://thorclient.com/",
+  "event": {
+    "assert": [
+      {
+        "key": "response.status",
+        "value": "200",
+        "disabled": false,
+        "type": "text",
+        "operator": "=="
+      }
+    ]
+  },
+  "response": {
+    "keys": [
+      "key",
+      "displayName",
+      "description",
+      "baseType",
+      "isContract",
+      "sortOrder",
+      "mayContainTypes",
+      "mediaFileExtensions",
+      "compositionBehaviors",
+      "contracts",
+      "created",
+      "lastModified",
+      "lastModifiedBy",
+      "properties"
+    ]
+  }
+}
