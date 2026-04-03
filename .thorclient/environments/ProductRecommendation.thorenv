@@ -1,0 +1,36 @@
+{
+  "variables": [
+    {
+      "id": "3a7cd9f2-45f7-47d7-9f4b-d63247fe1481",
+      "key": "BASE_URL",
+      "disabled": false,
+      "type": "text",
+      "privacy": "PRIVATE",
+      "value": ""
+    },
+    {
+      "id": "56068cae-89d5-473d-87ca-2683c127cf3c",
+      "key": "SITE",
+      "disabled": false,
+      "type": "text",
+      "privacy": "PRIVATE",
+      "value": ""
+    },
+    {
+      "id": "2f0e07cc-34ba-4466-9d94-917318c42325",
+      "key": "CLIENT_TOKEN",
+      "disabled": false,
+      "type": "text",
+      "privacy": "PRIVATE",
+      "value": ""
+    },
+    {
+      "id": "3d6b54d0-2161-48a1-892d-180fb9554833",
+      "key": "ADMIN_TOKEN",
+      "disabled": false,
+      "type": "text",
+      "privacy": "PRIVATE",
+      "value": ""
+    }
+  ]
+}

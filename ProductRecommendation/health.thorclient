@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "GET",
+    "name": "BASE_URL/",
+    "url": {
+      "raw": "{{BASE_URL}}",
+      "query": []
+    },
+    "header": [],
+    "body": {}
+  },
+  "backup": {},
+  "readme": "To open this file inside VSCode, you need to install Thor Client extension https://thorclient.com/",
+  "event": {
+    "assert": [
+      {
+        "key": "response.status",
+        "value": "200",
+        "disabled": false,
+        "type": "text",
+        "operator": "=="
+      }
+    ]
+  }
+}

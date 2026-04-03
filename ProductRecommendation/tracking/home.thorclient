@@ -1,0 +1,48 @@
+{
+  "request": {
+    "method": "POST",
+    "name": "BASE_URL/tracker/api/v1_4/rest.pagex",
+    "url": {
+      "raw": "{{BASE_URL}}/tracker/api/v1_4/rest.pagex",
+      "query": []
+    },
+    "header": [
+      {
+        "key": "Content-Type",
+        "value": "application/x-www-form-urlencoded"
+      }
+    ],
+    "body": {
+      "mode": "urlencoded",
+      "urlencoded": [
+        {
+          "id": "089d1925-c209-4c14-a6e5-99145adc7371",
+          "key": "jd",
+          "value": "{\n    \"clientToken\": \"{{CLIENT_TOKEN}}\",\n    \"site\": \"{{SITE}}\",\n    \"type\": \"home\",\n    \"session\": \"new\",\n    \"cuid\": \"new\",\n    \"lang\": \"en\",\n    \"currentURI\": \"http://localhost:5123/\",\n    \"previousURI\": \"\",\n    \"channel\": \"web\",\n    \"smartProducts\": [\n        \"\"\n    ]\n}",
+          "disabled": false,
+          "type": "text"
+        }
+      ]
+    }
+  },
+  "backup": {},
+  "readme": "To open this file inside VSCode, you need to install Thor Client extension https://thorclient.com/",
+  "event": {
+    "assert": [
+      {
+        "key": "response.status",
+        "value": "200",
+        "disabled": false,
+        "type": "text",
+        "operator": "=="
+      }
+    ]
+  },
+  "response": {
+    "keys": [
+      "session",
+      "pageTrackingId",
+      "status"
+    ]
+  }
+}
