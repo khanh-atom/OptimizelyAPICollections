@@ -1,0 +1,84 @@
+{
+  "request": {
+    "method": "POST",
+    "name": "https://example.com/_cms/preview2/oauth/token",
+    "url": {
+      "raw": "{{API_URL}}/oauth/token",
+      "query": []
+    },
+    "header": [
+      {
+        "key": "accept",
+        "value": "application/json"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "text/plain"
+      }
+    ],
+    "body": {
+      "mode": "raw",
+      "raw": "\n{\n  \"client_id\": \"{{ClientID}}\",\n  \"client_secret\": \"{{ClientSecret}}\",\n  \"grant_type\": \"client_credentials\"\n}\n",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      },
+      "formdata": [
+        {
+          "id": "10e417b6-5c54-42b7-8d76-5a4b3f4900db",
+          "key": "client_id",
+          "value": "{{ClientID}}",
+          "disabled": false,
+          "type": "text"
+        },
+        {
+          "id": "da6293c1-9860-4591-94e4-281b9cfd0636",
+          "key": "client_secret",
+          "value": "{{ClientSecret}}",
+          "disabled": false,
+          "type": "text"
+        },
+        {
+          "id": "3f47efba-997b-43bd-a5b4-cccde2c3ef2c",
+          "key": "grant_type",
+          "value": "client_credentials",
+          "disabled": false,
+          "type": "text"
+        }
+      ]
+    }
+  },
+  "readme": "To open this file inside VSCode, you need to install Thor Client extension https://thorclient.com/",
+  "event": {
+    "assert": [
+      {
+        "key": "response.status",
+        "value": "200",
+        "disabled": false,
+        "type": "text",
+        "operator": "=="
+      }
+    ],
+    "setvars": [
+      {
+        "id": "de575b2a-b4e3-40bd-9ffd-ef4b954ea82b",
+        "key": "AccessToken",
+        "value": "response.data.access_token",
+        "disabled": false,
+        "type": "text"
+      }
+    ]
+  },
+  "response": {
+    "keys": [
+      "token_type",
+      "access_token",
+      "expires_in"
+    ]
+  }
+}

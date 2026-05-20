@@ -1,0 +1,55 @@
+{
+  "request": {
+    "method": "GET",
+    "name": "BASE_URL/_cms/preview2/content/$CONTENT_KEY/versions",
+    "url": {
+      "raw": "{{API_URL}}/v1/content/{{ContentID}}/versions",
+      "query": []
+    },
+    "header": [
+      {
+        "id": "40d31eda-ac92-400d-a91b-ce3359c8660c",
+        "key": "Authorization",
+        "value": "Bearer {{AccessToken}}",
+        "disabled": false,
+        "type": "text"
+      },
+      {
+        "id": "960acd36-11d6-4775-abe6-00398047c2a6",
+        "key": "Accept",
+        "value": "application/json",
+        "disabled": false,
+        "type": "text"
+      }
+    ],
+    "body": {
+      "mode": "none",
+      "raw": "",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    }
+  },
+  "readme": "To open this file inside VSCode, you need to install Thor Client extension https://thorclient.com/",
+  "event": {
+    "assert": [
+      {
+        "key": "response.status",
+        "value": "200",
+        "disabled": false,
+        "type": "text",
+        "operator": "=="
+      }
+    ]
+  },
+  "response": {
+    "keys": [
+      "items",
+      "pageIndex",
+      "pageSize",
+      "totalCount"
+    ]
+  }
+}
