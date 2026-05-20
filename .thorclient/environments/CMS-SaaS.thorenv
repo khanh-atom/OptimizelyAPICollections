@@ -113,6 +113,30 @@
       "type": "text",
       "privacy": "PRIVATE",
       "value": ""
+    },
+    {
+      "id": "d17ae6a5-5d29-47c4-a087-5f71c45e05cc",
+      "key": "GatewayAddress",
+      "disabled": false,
+      "type": "text",
+      "privacy": "PRIVATE",
+      "value": ""
+    },
+    {
+      "id": "d31427cc-4f33-4db3-8ff0-77a603ff7dce",
+      "key": "AppKey",
+      "disabled": false,
+      "type": "text",
+      "privacy": "PRIVATE",
+      "value": ""
+    },
+    {
+      "id": "827225c4-7ba1-4361-abf7-e3ccb41a55c2",
+      "key": "AppSecret",
+      "disabled": false,
+      "type": "text",
+      "privacy": "PRIVATE",
+      "value": ""
     }
   ]
 }

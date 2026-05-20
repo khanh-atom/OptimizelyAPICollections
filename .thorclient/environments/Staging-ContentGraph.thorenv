@@ -1,0 +1,36 @@
+{
+  "variables": [
+    {
+      "id": "imported_9",
+      "key": "GatewayAddress",
+      "value": "",
+      "type": "text",
+      "privacy": "PRIVATE",
+      "disabled": false
+    },
+    {
+      "id": "imported_10",
+      "key": "AppKey",
+      "value": "",
+      "type": "text",
+      "privacy": "PRIVATE",
+      "disabled": false
+    },
+    {
+      "id": "imported_11",
+      "key": "AppSecret",
+      "value": "",
+      "type": "text",
+      "privacy": "PRIVATE",
+      "disabled": false
+    },
+    {
+      "id": "imported_12",
+      "key": "SingleKey",
+      "value": "",
+      "type": "text",
+      "privacy": "PRIVATE",
+      "disabled": false
+    }
+  ]
+}
