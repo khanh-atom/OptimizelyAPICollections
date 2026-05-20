@@ -67,7 +67,7 @@
         }
       },
       "graphql": {
-        "query": "query RecentContent {\n  Content(\n    orderBy: {Saved: DESC}\n    limit: 3\n\n  ) {\n    items {\n      Name\n      ContentLink {\n        Id\n        WorkId\n        GuidValue\n      }\n      Status\n      IsCommonDraft\n      Saved\n      Created\n      ParentLink {\n        Id\n        WorkId\n      }\n      Language {\n        Name\n      }\n    }\n    total\n  }\n}"
+        "query": "query RecentContent {\n  StandardPage(\n    orderBy: { _metadata: { lastModified: DESC } }\n    limit: 3\n  ) {\n    items {\n      Title\n      _metadata {\n        key\n        locale\n        version\n        displayName\n        status\n        created\n        lastModified\n        url {\n          default\n        }\n        types\n      }\n    }\n    total\n  }\n}"
       }
     }
   },
@@ -87,5 +87,8 @@
       "data",
       "extensions"
     ]
+  },
+  "backup": {
+    "graphqlQuery": "query RecentContent {\n  StandardPage(\n    orderBy: { _metadata: { lastModified: DESC } }\n    limit: 3\n  ) {\n    items {\n      Title\n      _metadata {\n        key\n        locale\n        version\n        displayName\n        status\n        created\n        lastModified\n        url {\n          default\n        }\n        types\n      }\n    }\n    total\n  }\n}"
   }
 }
