@@ -3,21 +3,14 @@
     "method": "POST",
     "name": "BASE_URL/_cms/preview2/content/$CONTENT_KEY/versions",
     "url": {
-      "raw": "{{OPTIMIZELY_CMS_URL}}/v1/content/{{ContentID}}/versions",
+      "raw": "{{API_URL}}/v1/content",
       "query": []
     },
     "header": [
       {
         "id": "40d31eda-ac92-400d-a91b-ce3359c8660c",
         "key": "Authorization",
-        "value": "Bearer {{AccessToken-preview2}}",
-        "disabled": false,
-        "type": "text"
-      },
-      {
-        "id": "c4acf361-7c70-44bb-a4c0-0cf881c0d70d",
-        "key": "Content-Type",
-        "value": "application/json",
+        "value": "Bearer {{AccessToken}}",
         "disabled": false,
         "type": "text"
       },
@@ -27,11 +20,18 @@
         "value": "application/json",
         "disabled": false,
         "type": "text"
+      },
+      {
+        "id": "16cf656d-dee6-4251-a7ab-1387e0a74f6a",
+        "key": "Content-Type",
+        "value": "application/json",
+        "disabled": false,
+        "type": "text"
       }
     ],
     "body": {
       "mode": "raw",
-      "raw": "{\r\n  \"displayName\": \"Test Page\",\r\n  \"locale\": \"en\",\r\n  \"routeSegment\": \"test-page\",\r\n  \"properties\": {},\r\n  \"status\": \"draft\"\r\n}",
+      "raw": "{\r\n    \"contentType\": \"StandardPage\",\r\n    \"container\": \"2d6f4ce2115448c4a435e5012d399e53\",\r\n    \"initialVersion\": {\r\n        \"displayName\": \"Post Content Test\",\r\n        \"locale\": \"en\",\r\n        \"routeSegment\": \"post-content-test-prop\",\r\n        \"properties\": {\r\n            \"Title\": {\r\n                \"value\": \"post content\"\r\n            }\r\n        }\r\n    }\r\n}\r\n",
       "options": {
         "raw": {
           "language": "json"
@@ -56,11 +56,10 @@
       "type",
       "title",
       "status",
-      "detail",
       "instance",
       "errors",
-      "code",
-      "traceId"
+      "traceId",
+      "code"
     ]
   }
 }

@@ -16,7 +16,15 @@
         "{{baseUrl}}"
       ],
       "variable": [],
-      "query": []
+      "query": [
+        {
+          "id": "55029d13-6c76-41b0-9f0f-4e9c5a569303",
+          "key": "auth",
+          "value": "{{SingleKey}}",
+          "type": "string",
+          "isFound": true
+        }
+      ]
     },
     "header": [
       {
